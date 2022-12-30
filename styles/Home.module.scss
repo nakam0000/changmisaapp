@@ -51,15 +51,43 @@
 	}
 }
 
+.title{
+	width: auto;
+	height: 34px;
+	display: block;
+	margin: 0 auto;
+}
+
 .news{
 	padding: 40px 0;
-	.title{
-		width: 120px;
-		height: auto;
-		display: block;
-		margin: 0 auto;
-	}
 	.swiperContainer{
+		padding: 40px 0;
+		.swiper-wrapper{
+			padding: 0 20px;
+			.swiper-slide{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.works{
+	.youtubeDumContainer{
+		padding: 40px 0;
+		.youtubeDum{
+			width: 90%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+.discography{
+	.disList{
 		padding: 40px 0;
 	}
 }
+

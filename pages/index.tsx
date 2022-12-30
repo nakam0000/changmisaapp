@@ -14,6 +14,13 @@ import 'swiper/css'
 import dum1 from '../assets/images/dum1.png'
 import dum2 from '../assets/images/dum2.png'
 import dum3 from '../assets/images/dum3.png'
+import worksTitle from '../assets/images/works-title.png'
+import youtubeDum from '../assets/images/youtube-dum.png'
+import discographyTitle from '../assets/images/discography-title.png'
+import disDum1 from '../assets/images/dis-dum1.png'
+import disDum2 from '../assets/images/dis-dum2.png'
+import disDum3 from '../assets/images/dis-dum3.png'
+import disDum4 from '../assets/images/dis-dum4.png'
 
 SwiperCore.use([Pagination, Navigation]) 
 
@@ -45,8 +52,10 @@ export default function Home() {
           <Image className={styles.title} src={newsTitle} alt=""/>
           <div className={styles.swiperContainer}>
             <Swiper
-            spaceBetween={10}
+            spaceBetween={0}
             slidesPerView={1}
+            centeredSlides={true}
+            loop={true}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
           >
@@ -56,6 +65,21 @@ export default function Home() {
             <SwiperSlide><Image src={dum1} alt="" /></SwiperSlide>
           </Swiper>
           </div>
+        </div>
+        <div className={styles.works}>
+          <Image className={styles.title} src={worksTitle} alt=""/>
+          <div className={styles.youtubeDumContainer}>
+            <Image className={styles.youtubeDum} src={youtubeDum} alt=""/>
+          </div>
+        </div>
+        <div className={styles.discography}>
+          <Image className={styles.title} src={discographyTitle} alt=""/>
+          <ul className={styles.disList}>
+            <li><Image src={disDum1} alt=""/></li>
+            <li><Image src={disDum2} alt=""/></li>
+            <li><Image src={disDum3} alt=""/></li>
+            <li><Image src={disDum4} alt=""/></li>
+          </ul>
         </div>
       </main>
     </div>

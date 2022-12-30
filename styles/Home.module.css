@@ -68,18 +68,41 @@
   vertical-align: bottom;
 }
 
+.title {
+  width: auto;
+  height: 34px;
+  display: block;
+  margin: 0 auto;
+}
+
 .news {
   padding: 40px 0;
 }
 
-.news .title {
-  width: 120px;
+.news .swiperContainer {
+  padding: 40px 0;
+}
+
+.news .swiperContainer .swiper-wrapper {
+  padding: 0 20px;
+}
+
+.news .swiperContainer .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+
+.works .youtubeDumContainer {
+  padding: 40px 0;
+}
+
+.works .youtubeDumContainer .youtubeDum {
+  width: 90%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.news .swiperContainer {
+.discography .disList {
   padding: 40px 0;
 }
 /*# sourceMappingURL=Home.module.css.map */
