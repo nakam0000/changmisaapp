@@ -6,50 +6,60 @@
 
 .hero{
   background-image: url('../assets/images/hero.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+	position: relative;
   .heroImage{
     width: 80%;
     height: auto;
   }
+	.heroHeader{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 7%;
+		width: 100%;
+		background-color: #000;
+	}
+	.heroFooter{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 7%;
+		width: 100%;
+		background-color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		ul{
+			display: flex;
+			list-style: none;
+			li{
+				margin: 0 7px;
+				a{
+					img{
+						vertical-align: bottom;
+					}
+				}
+			}
+		}
+	}
 }
 
-.code {
-	font-weight: 700;
-	font-family: var(--font-mono);
-}
-.center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	padding: 4rem 0;
-	&::before {
-		background: var(--secondary-glow);
-		border-radius: 50%;
-		width: 480px;
-		height: 360px;
-		margin-left: -400px;
-		content: '';
-		left: 50%;
-		position: absolute;
-		filter: blur(45px);
-		transform: translateZ(0);
+.news{
+	padding: 40px 0;
+	.title{
+		width: 120px;
+		height: auto;
+		display: block;
+		margin: 0 auto;
 	}
-	&::after {
-		background: var(--primary-glow);
-		width: 240px;
-		height: 180px;
-		z-index: -1;
-		content: '';
-		left: 50%;
-		position: absolute;
-		filter: blur(45px);
-		transform: translateZ(0);
+	.swiperContainer{
+		padding: 40px 0;
 	}
-}
-.logo {
-	position: relative;
 }

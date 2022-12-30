@@ -5,6 +5,9 @@
 /* Tablet and Smaller Desktop */
 .hero {
   background-image: url("../assets/images/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,6 +18,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .hero .heroImage {
@@ -22,55 +26,60 @@
   height: auto;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+.hero .heroHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7%;
+  width: 100%;
+  background-color: #000;
 }
 
-.center {
+.hero .heroFooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7%;
+  width: 100%;
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  padding: 4rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-  content: '';
-  left: 50%;
-  position: absolute;
-  -webkit-filter: blur(45px);
-          filter: blur(45px);
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+.hero .heroFooter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
 }
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-  content: '';
-  left: 50%;
-  position: absolute;
-  -webkit-filter: blur(45px);
-          filter: blur(45px);
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+.hero .heroFooter ul li {
+  margin: 0 7px;
 }
 
-.logo {
-  position: relative;
+.hero .heroFooter ul li a img {
+  vertical-align: bottom;
+}
+
+.news {
+  padding: 40px 0;
+}
+
+.news .title {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.news .swiperContainer {
+  padding: 40px 0;
 }
 /*# sourceMappingURL=Home.module.css.map */
