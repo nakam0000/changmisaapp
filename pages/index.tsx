@@ -21,6 +21,10 @@ import disDum1 from '../assets/images/dis-dum1.png'
 import disDum2 from '../assets/images/dis-dum2.png'
 import disDum3 from '../assets/images/dis-dum3.png'
 import disDum4 from '../assets/images/dis-dum4.png'
+import aboutTitle from '../assets/images/about-title.png'
+import profile from '../assets/images/profile.png'
+import contactTitle from '../assets/images/contact-title.png'
+import footerLogo from '../assets/images/footer-logo.png'
 
 SwiperCore.use([Pagination, Navigation]) 
 
@@ -75,13 +79,95 @@ export default function Home() {
         <div className={styles.discography}>
           <Image className={styles.title} src={discographyTitle} alt=""/>
           <ul className={styles.disList}>
-            <li><Image src={disDum1} alt=""/></li>
-            <li><Image src={disDum2} alt=""/></li>
-            <li><Image src={disDum3} alt=""/></li>
-            <li><Image src={disDum4} alt=""/></li>
+            <li>
+              <Image src={disDum1} alt=""/>
+              <div className={styles.detail}>
+                <h3>Mellow Sunday</h3>
+                <p className={styles.format}>Format:CD</p>
+                <ol>
+                  <li>Ichijiku</li>
+                  <li>I will fix you</li>
+                  <li>Something About Us(DaftPunk cover)</li>
+                  <li>S.A.U.N.A(Bonus track)</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <Image src={disDum2} alt=""/>
+              <div className={styles.detail}>
+                <h3>Mellow Sunday</h3>
+                <p className={styles.format}>Format:CD</p>
+                <ol>
+                  <li>Ichijiku</li>
+                  <li>I will fix you</li>
+                  <li>Something About Us(DaftPunk cover)</li>
+                  <li>S.A.U.N.A(Bonus track)</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <Image src={disDum3} alt=""/>
+              <div className={styles.detail}>
+                <h3>Mellow Sunday</h3>
+                <p className={styles.format}>Format:CD</p>
+                <ol>
+                  <li>Ichijiku</li>
+                  <li>I will fix you</li>
+                  <li>Something About Us(DaftPunk cover)</li>
+                  <li>S.A.U.N.A(Bonus track)</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <Image src={disDum4} alt=""/>
+              <div className={styles.detail}>
+                <h3>Mellow Sunday</h3>
+                <p className={styles.format}>Format:CD</p>
+                <ol>
+                  <li>Ichijiku</li>
+                  <li>I will fix you</li>
+                  <li>Something About Us(DaftPunk cover)</li>
+                  <li>S.A.U.N.A(Bonus track)</li>
+                </ol>
+              </div>
+            </li>
           </ul>
         </div>
+        <div className={styles.about}>
+          <Image src={aboutTitle} alt=""/>
+          <div className={styles.content}>
+            <Image src={profile} alt=""/>
+            <div className={styles.detail}>
+              <h3>CHANG-MiSA</h3>
+              <p>Hi! l'm CHANG-MiSA.<br/>I'm singer and pianist.<br/>I love fish and I have blue fish as a pet,he is very curious fish.<br/>My favorite is KAZUNOKO(Japanese fish eggs).<br/>And I also like to read books and watching movie and jigsaw pazzles.<br/>When I write my music,I take inspiration from my favorites and my daily life.<br/>Check out my music!<br/>I'm really happy if you like it</p>
+              <p>幼少期から海の上のピアニストに憧れて育つ。<br/>現在はジャズボーカリスト、またピアニストとしてホテル、レストラン、フェリーなどでのショーやBGM演奏を行いながら、オリジナル楽曲の制作、活動をしている。<br/>2021年OWL WING RECORDジャズボーカルオーディション準グランプリ受賞。<br/>2022年オリジナルミニアルバムをリリース。<br/>お魚は観るのも食べるのも釣って捌くのも好き。好物は数の子。</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.contact}>
+          <Image className={styles.title} src={contactTitle} alt="" />
+          <div>
+            <p>ライブのご依頼、お問合せはこちらから。<br/>オンラインレッスンのお問合せ、募集もこちらより承っております。</p>
+            <div className={styles.btnContainer}>
+              <a href="" className={styles.btn}>CONTACT ME!</a>
+            </div>
+          </div>
+        </div>
       </main>
+      <footer className={styles.footer}>
+        <div className={styles.footerInner}>
+          <Image src={footerLogo} alt=""/>
+          <div className={styles.detail}>
+            <ul className={styles.snsList}>
+              <li><a href=""><Image src={twitterIcon} alt=""/></a></li>
+              <li><a href=""><Image src={facebookIcon} alt=""/></a></li>
+              <li><a href=""><Image src={instaIcon} alt=""/></a></li>
+              <li><a href=""><Image src={youtubeIcon} alt=""/></a></li>
+            </ul>
+            <p>Copyright ©CHANG-MiSA,<br/>All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
