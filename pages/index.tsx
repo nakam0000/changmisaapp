@@ -11,6 +11,9 @@ import newsTitle from '../assets/images/news-title.png'
 import { Swiper, SwiperSlide } from 'swiper/react' //カルーセル用のタグをインポート
 import SwiperCore, { Pagination, Navigation } from 'swiper' //使いたい機能をインポート
 import 'swiper/css'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import dum1 from '../assets/images/dum1.png'
 import dum2 from '../assets/images/dum2.png'
 import dum3 from '../assets/images/dum3.png'
@@ -30,7 +33,31 @@ SwiperCore.use([Pagination, Navigation])
 
 const inter = Inter({ subsets: ['latin'] })
 
+/* <Swiper
+  spaceBetween={0}
+  slidesPerView={1}
+  centeredSlides={true}
+  loop={true}
+  onSlideChange={() => console.log('slide change')}
+  onSwiper={(swiper) => console.log(swiper)}
+  >
+  <SwiperSlide><Image src={dum1} alt="" /></SwiperSlide>
+  <SwiperSlide><Image src={dum2} alt="" /></SwiperSlide>
+  <SwiperSlide><Image src={dum3} alt="" /></SwiperSlide>
+  <SwiperSlide><Image src={dum1} alt="" /></SwiperSlide>
+</Swiper> */
+
 export default function Home() {
+  const settings = {
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    centerPadding: '40px',
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <div>
       <Head>
@@ -55,19 +82,12 @@ export default function Home() {
         <div className={styles.news}>
           <Image className={styles.title} src={newsTitle} alt=""/>
           <div className={styles.swiperContainer}>
-            <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
-            centeredSlides={true}
-            loop={true}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            <SwiperSlide><Image src={dum1} alt="" /></SwiperSlide>
-            <SwiperSlide><Image src={dum2} alt="" /></SwiperSlide>
-            <SwiperSlide><Image src={dum3} alt="" /></SwiperSlide>
-            <SwiperSlide><Image src={dum1} alt="" /></SwiperSlide>
-          </Swiper>
+            
+          <Slider {...settings}>
+            <Image src={dum1} alt="" style={{width: '100%', height: 'auto'}}/>
+            <Image src={dum2} alt="" style={{width: '100%', height: 'auto'}}/>
+            <Image src={dum3} alt="" style={{width: '100%', height: 'auto'}}/>
+          </Slider>
           </div>
         </div>
         <div className={styles.works}>
@@ -134,7 +154,7 @@ export default function Home() {
           </ul>
         </div>
         <div className={styles.about}>
-          <Image src={aboutTitle} alt=""/>
+          <Image className={styles.title} src={aboutTitle} alt=""/>
           <div className={styles.content}>
             <Image src={profile} alt=""/>
             <div className={styles.detail}>

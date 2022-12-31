@@ -70,7 +70,7 @@
 
 .title {
   width: auto;
-  height: 34px;
+  height: 28px;
   display: block;
   margin: 0 auto;
 }
@@ -83,11 +83,7 @@
   padding: 40px 0;
 }
 
-.news .swiperContainer .swiper-wrapper {
-  padding: 0 20px;
-}
-
-.news .swiperContainer .swiper-wrapper .swiper-slide img {
+.news .swiperContainer .slick-slide img {
   width: 100%;
 }
 
