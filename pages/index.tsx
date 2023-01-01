@@ -48,6 +48,11 @@ const inter = Inter({ subsets: ['latin'] })
 </Swiper> */
 
 export default function Home() {
+
+  const slideStyle = {
+    height: 'auto'
+  }
+  
   const settings = {
     dots: false,
     arrows: false,
@@ -84,9 +89,9 @@ export default function Home() {
           <div className={styles.swiperContainer}>
             
           <Slider {...settings}>
-            <Image src={dum1} alt="" style={{width: '100%', height: 'auto'}}/>
-            <Image src={dum2} alt="" style={{width: '100%', height: 'auto'}}/>
-            <Image src={dum3} alt="" style={{width: '100%', height: 'auto'}}/>
+            <Image className={styles.slideImage} src={dum1} alt="" fill style={{objectFit: 'contain'}}/>
+            <Image className={styles.slideImage} src={dum2} alt="" fill style={{objectFit: 'contain'}}/>
+            <Image className={styles.slideImage} src={dum3} alt="" fill style={{objectFit: 'contain'}}/>
           </Slider>
           </div>
         </div>

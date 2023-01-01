@@ -62,10 +62,9 @@
 	padding: 40px 0;
 	.swiperContainer{
 		padding: 40px 0;
-		.slick-slide{
-			img{
-				width: 100%;
-			}
+		.slideImage{
+			height: auto !important;
+			position: relative !important;
 		}
 	}
 }

@@ -83,8 +83,9 @@
   padding: 40px 0;
 }
 
-.news .swiperContainer .slick-slide img {
-  width: 100%;
+.news .swiperContainer .slideImage {
+  height: auto !important;
+  position: relative !important;
 }
 
 .works .youtubeDumContainer {
