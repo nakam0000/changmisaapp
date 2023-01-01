@@ -84,6 +84,7 @@
 }
 
 .news .swiperContainer .slideImage {
+  padding: 0 20px !important;
   height: auto !important;
   position: relative !important;
 }
