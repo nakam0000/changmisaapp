@@ -83,7 +83,7 @@ export default function Home() {
         <div className={styles.news}>
           <Image className={styles.title} src={newsTitle} alt=""/>
           <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-          <div className="elfsight-app-f5da005b-7dba-4634-9b5f-72a2af6f1880"></div>
+          <div className="elfsight-app-00bd7d13-3425-4293-91ea-9206ddbf4a0a"></div>
         </div>
         <div className={styles.works}>
           <Image className={styles.title} src={worksTitle} alt=""/>
@@ -176,7 +176,7 @@ export default function Home() {
             <ul className={styles.snsList}>
               <li><a href=""><Image src={twitterIcon} alt=""/></a></li>
               <li><a href=""><Image src={facebookIcon} alt=""/></a></li>
-              <li><a href=""><Image src={instaIcon} alt=""/></a></li>
+              <li><a href="https://www.instagram.com/chang_misa.osakana/" target="_blank"><Image src={instaIcon} alt=""/></a></li>
               <li><a href=""><Image src={youtubeIcon} alt=""/></a></li>
             </ul>
             <p>Copyright ©CHANG-MiSA,<br/>All Rights Reserved.</p>

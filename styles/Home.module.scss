@@ -101,6 +101,19 @@
 	background-image: url('../assets/images/about_bg.png');
 }
 
+.contact{
+	padding: 20px 0;
+	.btnContainer{
+		text-align: center;
+		padding: 10px 0;
+		.btn{
+			background-color: #db5a24;
+			padding: 3px 10px;
+		}
+	}
+	
+}
+
 .footer{
 	background-color: #db5a24;
 	// .footerInner{
@@ -108,5 +121,19 @@
 
 	// 	}
 	// }
+	ul{
+		padding: 10px 0;
+		display: flex;
+		list-style: none;
+		justify-content: center;
+		li{
+			margin: 0 7px;
+			a{
+				img{
+					vertical-align: bottom;
+				}
+			}
+		}
+	}
 }
 
