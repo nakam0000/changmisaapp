@@ -29,29 +29,25 @@ import profile from '../assets/images/profile.png'
 import contactTitle from '../assets/images/contact-title.png'
 import footerLogo from '../assets/images/footer-logo.png'
 
+
+
 SwiperCore.use([Pagination, Navigation]) 
 
 const inter = Inter({ subsets: ['latin'] })
 
-/* <Swiper
-  spaceBetween={0}
-  slidesPerView={1}
-  centeredSlides={true}
-  loop={true}
-  onSlideChange={() => console.log('slide change')}
-  onSwiper={(swiper) => console.log(swiper)}
-  >
-  <SwiperSlide><Image src={dum1} alt="" /></SwiperSlide>
-  <SwiperSlide><Image src={dum2} alt="" /></SwiperSlide>
-  <SwiperSlide><Image src={dum3} alt="" /></SwiperSlide>
-  <SwiperSlide><Image src={dum1} alt="" /></SwiperSlide>
-</Swiper> */
+
+/* <div className={styles.swiperContainer}>            
+<Slider {...settings}>
+  <Image className={styles.slideImage} src={dum1} alt="" fill style={{objectFit: 'contain'}}/>
+  <Image className={styles.slideImage} src={dum2} alt="" fill style={{objectFit: 'contain'}}/>
+  <Image className={styles.slideImage} src={dum3} alt="" fill style={{objectFit: 'contain'}}/>
+</Slider>
+</div> */
+
+/* <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div className="elfsight-app-79836ba1-c574-4b9d-ac01-a75f4c674dac"></div> */
 
 export default function Home() {
-
-  const slideStyle = {
-    height: 'auto'
-  }
   
   const settings = {
     dots: false,
@@ -79,21 +75,15 @@ export default function Home() {
             <ul>
               <li><a href=""><Image src={twitterIcon} alt=""/></a></li>
               <li><a href=""><Image src={facebookIcon} alt=""/></a></li>
-              <li><a href=""><Image src={instaIcon} alt=""/></a></li>
+              <li><a href="https://www.instagram.com/chang_misa.osakana/" target="_blank"><Image src={instaIcon} alt=""/></a></li>
               <li><a href=""><Image src={youtubeIcon} alt=""/></a></li>
             </ul>
           </div>
         </div>
         <div className={styles.news}>
           <Image className={styles.title} src={newsTitle} alt=""/>
-          <div className={styles.swiperContainer}>
-            
-          <Slider {...settings}>
-            <Image className={styles.slideImage} src={dum1} alt="" fill style={{objectFit: 'contain'}}/>
-            <Image className={styles.slideImage} src={dum2} alt="" fill style={{objectFit: 'contain'}}/>
-            <Image className={styles.slideImage} src={dum3} alt="" fill style={{objectFit: 'contain'}}/>
-          </Slider>
-          </div>
+          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+          <div className="elfsight-app-f5da005b-7dba-4634-9b5f-72a2af6f1880"></div>
         </div>
         <div className={styles.works}>
           <Image className={styles.title} src={worksTitle} alt=""/>
@@ -174,7 +164,7 @@ export default function Home() {
           <div>
             <p>ライブのご依頼、お問合せはこちらから。<br/>オンラインレッスンのお問合せ、募集もこちらより承っております。</p>
             <div className={styles.btnContainer}>
-              <a href="" className={styles.btn}>CONTACT ME!</a>
+              <a href="https://forms.gle/6Cm5ZFsKpnExdBJ89" target="_blank" className={styles.btn}>CONTACT ME!</a>
             </div>
           </div>
         </div>

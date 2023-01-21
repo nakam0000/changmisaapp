@@ -55,11 +55,20 @@
 	width: auto;
 	height: 28px;
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 40px;
+
 }
 
 .news{
 	padding: 40px 0;
+	.eapps-instagram-feed{
+		padding: 40px 0;
+	}
+	.eapps-link{
+		display: none !important;
+	}
+
+	
 	.swiperContainer{
 		padding: 40px 0;
 		.slideImage{
